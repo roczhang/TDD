@@ -1,7 +1,6 @@
 import com.yg.Bank;
 import com.yg.Expression;
 import com.yg.Number;
-import com.yg.Number;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

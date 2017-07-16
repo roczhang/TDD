@@ -1,2 +1,4 @@
 rootProject.name = 'hello'
+include 'TDD_BY_Example_money_operation'
+include 'kata_1_StringCalculation'
 
