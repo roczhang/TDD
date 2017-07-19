@@ -71,7 +71,7 @@ public class TestString2Number {
     public void test_with_e() throws Exception {
 
         assertConvertTrue("1e2", true);
-        assertConvertTrue( "10000e0001", false);
+        assertConvertTrue( "10000e0001", true);
         assertConvertTrue("1e", false);
         assertConvertTrue( "6ee69",false);
     }
