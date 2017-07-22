@@ -6,3 +6,9 @@ FiceBuzz is simple case can be run by cyber-dojo
 
 annagrams --> this is recursive problem. TDD can easy life on recursive.  And recusive the intuiation way to break down the problem.
 cyberdojo, does not easy to import the package, that's annoy.
+
+Coin Change( exchange 1$ to 1,5,10,25 cent)==>
+
+1. redue the code which have sideEffect; ++index, and index++;
+2. good test case will help you to think much better
+3. if hard to check is the result is right or bad, you can use different way to cacluate and then check wether they are equal
