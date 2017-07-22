@@ -4,4 +4,5 @@ include 'kata_1_StringCalculation'
 include 'String2Number'
 include 'innagrams'
 include 'FaceBiz'
+include 'ExChangCoin'
 
