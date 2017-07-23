@@ -28,10 +28,10 @@ public class Hiker {
     }
 
     public static int internalChange3(int n, int money) {
-
-        System.out.println(n);
-        System.out.println(money);
-        System.out.println();
+//
+//        System.out.println(n);
+//        System.out.println(money);
+//        System.out.println();
 
         if( n == 0) return  0;
 

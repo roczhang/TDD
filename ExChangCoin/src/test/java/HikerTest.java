@@ -52,8 +52,8 @@ public class HikerTest {
 
         System.out.print(Hiker.answer(100));
 
-        assertCoinCount(Hiker.answer(100), Hiker.internalChange2(0, 100));
-        assertCoinCount(Hiker.answer(100), Hiker.internalChange3(4, 100));
+        assertCoinCount(Hiker.answer(1000), Hiker.internalChange2(0, 1000));
+        //assertCoinCount(Hiker.answer(100), Hiker.internalChange3(4, 100));
     }
 
     private void assertCoinCount(int expected, int input) {

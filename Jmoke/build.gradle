@@ -1,11 +1,16 @@
 version 'unspecified'
 
 apply plugin: 'java'
-
+//apply plugin: 'gradle-one-jar'
 sourceCompatibility = 1.8
+apply plugin: 'war'
 
 repositories {
     mavenCentral()
+//
+//    dependencies {
+//        classpath 'com.github.rholder:gradle-one-jar:1.0.4'
+//    }
 }
 
 dependencies {
