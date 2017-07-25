@@ -12,3 +12,13 @@ Coin Change( exchange 1$ to 1,5,10,25 cent)==>
 1. redue the code which have sideEffect; ++index, and index++;
 2. good test case will help you to think much better
 3. if hard to check is the result is right or bad, you can use different way to cacluate and then check wether they are equal
+
+
+
+TDD --calc status
+
+1. When you implement one test case, find that it need another class ,help.  It's good way to stop and record what's you are working on papee; 
+And try tdd to implement help or dependenct class, after that return back it implement the exsit one.
+
+Other case, it may use mock to implement.
+
