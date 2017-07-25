@@ -1,7 +1,7 @@
 import org.junit.*;
 import static org.junit.Assert.*;
 
-public class gitHikerTest {
+public class HikerTest {
 
     @Test
     public void test_simple_number() {
