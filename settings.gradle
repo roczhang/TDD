@@ -6,4 +6,6 @@ include 'innagrams'
 include 'FaceBiz'
 include 'ExChangCoin'
 include 'Jmoke'
+include 'CalcStatus'
+
 
