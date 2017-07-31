@@ -1,4 +1,9 @@
 
+BalancedParenthesee
+
+1. Junit paramterized function works but it has problem to hard understasnd the case come from
+   to complement the parameterized, it need to add the output some information to console to undertand the test case
+    for easy to understand the debug.
 
 cyber-dojo great tool to review the growth of the coding
 FiceBuzz is simple case can be run by cyber-dojo
@@ -21,4 +26,6 @@ TDD --calc status
 And try tdd to implement help or dependenct class, after that return back it implement the exsit one.
 
 Other case, it may use mock to implement.
+
+
 
