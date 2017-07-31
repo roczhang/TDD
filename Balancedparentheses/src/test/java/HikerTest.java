@@ -11,36 +11,41 @@ import static org.junit.Assert.*;
 public class HikerTest {
 
 
+
+
     @Parameterized.Parameters(name = "{index}:")
     public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][]{
-                {"", true},
-                {"xxxxxx", true},
-                {"()", true},
-                {")(", false},
-                {"[]", true},
-                {"][", false},
-                {"{}", true},
-                {"}{", false},
-                {"{{)(}}", false},
-                {"({)}", false},
-                {"[({})]", true},
-                {"{}([])", true},
-                {"{()}[[{}]]", true},
+                {"test_empty_parentheses","", true},
+                {"test_empty_parentheses","xxxxxx", true},
+                {"test_onlyOne_parentheses", "()", true},
+                {"test_onlyOne_parentheses",")(", false},
+                {"test_onlyOne_brackets", "[]", true},
+                {"test_onlyOne_brackets", "][", false},
+                {"test_onlyOne_ big _brackets", "{}", true},
+                {"test_onlyOne_ big _brackets","}{", false},
+                {"test_mix_brace","{{)(}}", false},
+                {"test_mix_brace","({)}", false},
+                {"test_mix_brace","[({})]", true},
+                {"test_mix_brace","{}([])", true},
+                {"test_mix_brace","{()}[[{}]]", true},
         });
     }
 
 
     private String input;
     private boolean expected;
+    private final String description;
 
-    public HikerTest(String input, boolean expected) {
+    public HikerTest(String discription, String input, boolean expected) {
+        this.description = discription;
         this.input = input;
         this.expected = expected;
     }
 
     @Test
     public void test() {
+        System.out.println(this.description);
         System.out.println(input + " : " + new Boolean(expected).toString());
         assertEquals(expected, Hiker.answer(input));
     }
