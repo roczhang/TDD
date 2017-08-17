@@ -7,6 +7,7 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.jmock.Mockery;
+import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import static org.hamcrest.CoreMatchers.endsWith;
 import static org.hamcrest.CoreMatchers.is;
@@ -30,6 +31,11 @@ public class TestMockHello {
         IHelloListen listen = mokery.mock(IHelloListen.class);
         Hello hello = new Hello(listen);
 
+
+        throw new UnsupportedOperationException();
+
+
+
         mokery.checking( new Expectations(){
                 {
 
@@ -41,6 +47,8 @@ public class TestMockHello {
                     when( states.is("on"));
                     inSequence(step);
                     then( states.is("off"));
+
+
 
 
                     oneOf(listen).sayWorld(with(equal("hello")));
